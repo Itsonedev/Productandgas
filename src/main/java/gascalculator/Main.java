@@ -10,11 +10,11 @@ public class Main {
         int quantity = scanner.nextInt();
         System.out.println("How much did the "+shoes+" cost?");
         double shoeCost = scanner.nextDouble();
-        double totalPlatterPrice = (quantity * shoeCost);
+        double totalPriceOfShoes = (quantity * shoeCost);
         scanner.nextLine();
         System.out.println("How many miles did you travel?");
         int miles = scanner.nextInt();
-        
+
         double fee = 0.0;
 
         if (miles >= 0 && miles <= 5){
@@ -28,9 +28,9 @@ public class Main {
         }else if (miles > 50){
             fee = 20;
         }
-        double totalCost = (totalPlatterPrice + fee);
+        double totalCost = (totalPriceOfShoes + fee);
         System.out.println("______________________________________________________");
-        System.out.println("Product         Qty       Price       Miles      Total\n"+"----            ---        -----      -----      -----\n"+ shoes +"         "+quantity+ "         "+totalPlatterPrice+ "         "+ miles +"        "+ totalCost);
+        System.out.println("Product         Qty       Price       Miles      Total\n"+"----            ---        -----      -----      -----\n"+ shoes +"         "+quantity+ "         "+totalPriceOfShoes+ "         "+ miles +"        "+ totalCost);
         System.out.println("              Thank you come again!");
 
 
