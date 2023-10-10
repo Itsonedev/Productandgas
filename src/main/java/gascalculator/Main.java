@@ -31,6 +31,7 @@ public class Main {
         double totalCost = (totalPriceOfShoes + fee);
         System.out.println("______________________________________________________");
         System.out.println("Product         Qty       Price       Miles      Total\n"+"----            ---        -----      -----      -----\n"+ shoes +"         "+quantity+ "         "+totalPriceOfShoes+ "         "+ miles +"        "+ totalCost);
+        System.out.printf("%-15s  %-4d     $%-6.2f     %-5d     $%-6.2f%n", shoes, quantity, shoeCost, miles, totalCost);
         System.out.println("              Thank you come again!");
 
 
